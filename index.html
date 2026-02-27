@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>May Cao | Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio website featuring education, skills, experience, projects, and awards."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#FFF9F1",
+            mint: "#DDF3E6",
+            peach: "#FFE5D9",
+            sky: "#DDEEFF",
+            lavender: "#ECE7FF",
+            ink: "#334155"
+          },
+          boxShadow: {
+            soft: "0 8px 24px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body class="bg-cream text-ink selection:bg-mint">
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-white/70 bg-cream/85">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="#home" class="text-lg font-semibold tracking-wide">May Cao</a>
+      <ul class="hidden items-center gap-6 text-sm font-medium md:flex">
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#awards">Awards</a></li>
+      </ul>
+      <a href="#projects" class="rounded-full bg-white px-4 py-2 text-sm font-semibold shadow-soft">View Work</a>
+    </nav>
+  </header>
+
+  <main id="home" class="mx-auto max-w-6xl px-6 pb-20 pt-10 md:pt-14">
+    <section class="reveal mb-16 grid items-center gap-8 rounded-3xl bg-white p-8 shadow-soft md:mb-24 md:grid-cols-[1fr_auto]">
+      <div>
+        <p class="mb-4 inline-block rounded-full bg-mint px-4 py-1 text-xs font-semibold uppercase tracking-wider">
+          Open to Opportunities
+        </p>
+        <h1 class="mb-2 text-2xl font-bold leading-tight md:text-4xl">
+          Hi! I'm May Cao ^^
+        </h1>
+
+        <p class="max-w-2xl text-sm font-medium uppercase tracking-wide text-slate-500">
+          Software Engineer | Curious Builder | Fast Learner | Seeking Internships
+        </p>
+        <p class="mb-8 mt-2 max-w-xl text-slate-600">
+          Computer Science @ University of Waterloo
+        </p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="mailto:may.cao@uwaterloo.ca"
+            aria-label="Email"
+            class="inline-flex items-center justify-center text-sky-500 transition hover:-translate-y-0.5 hover:text-sky-700"
+          >
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M3 6h18v12H3z"></path>
+              <path d="m3 7 9 7 9-7"></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mayyuchencao"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            class="inline-flex items-center justify-center text-blue-600 transition hover:-translate-y-0.5 hover:text-blue-800"
+          >
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+              <path d="M6.94 8.5a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2ZM5.5 9.8h2.9V18H5.5V9.8Zm4.8 0H13v1.1h.04c.37-.7 1.26-1.43 2.6-1.43 2.78 0 3.3 1.83 3.3 4.2V18H16V14c0-.95-.02-2.17-1.32-2.17-1.33 0-1.53 1.04-1.53 2.1V18h-2.85V9.8Z"></path>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/mayyuchencao"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            class="inline-flex items-center justify-center text-slate-500 transition hover:-translate-y-0.5 hover:text-slate-700"
+          >
+            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.12-1.47-1.12-1.47-.92-.62.07-.6.07-.6 1.01.08 1.55 1.04 1.55 1.04.9 1.54 2.36 1.1 2.93.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.4-2 1.04-2.7-.1-.26-.45-1.3.1-2.71 0 0 .85-.27 2.78 1.03A9.7 9.7 0 0 1 12 6.84a9.7 9.7 0 0 1 2.53.34c1.93-1.3 2.78-1.03 2.78-1.03.55 1.4.2 2.45.1 2.71.65.7 1.04 1.6 1.04 2.7 0 3.85-2.35 4.7-4.58 4.94.36.3.68.89.68 1.8V21c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="order-first mb-2 flex justify-start md:order-none md:mb-0 md:justify-end md:self-start">
+        <figure class="h-28 w-28 overflow-hidden rounded-full border border-slate-200 bg-white p-1 shadow-soft md:h-32 md:w-32">
+          <!-- TODO: Upload your avatar to assets/avatar/profile.jpg -->
+          <img
+            src="./assets/avatar/profile.jpg"
+            alt="Portrait of May Cao"
+            class="h-full w-full rounded-full object-cover"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="education" class="reveal mb-14 scroll-mt-24">
+      <h2 class="section-title">Education</h2>
+      <div class="rounded-3xl bg-white p-6 shadow-soft md:p-8">
+        <div class="flex items-stretch gap-4 md:gap-6">
+          <div class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-cream p-0.5 md:h-24 md:w-24 md:p-1">
+            <!-- TODO: Upload Waterloo logo to assets/icons/waterloo-logo.png -->
+            <img
+              src="./assets/icons/waterloo-logo.png"
+              alt="University of Waterloo logo"
+              class="h-full w-full scale-110 object-contain"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">University of Waterloo</h3>
+            <p class="mt-1 text-sm text-slate-500">Honors Computer Science | 2025 - 2030</p>
+            <p class="mt-4 text-slate-600">
+              Relevant Coursework: Functional Program Design (Advanced), Algorithm Design & Data Abstraction, Tools and Techniques for Software Development, Linear Algebra, Calculus, Probability & Statistics, Digital Circuits & Systems
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal mb-14 scroll-mt-24">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="mb-3 font-semibold">Languages</h3>
+          <p class="text-sm text-slate-600">C, C++, Python, JavaScript, TypeScript, HTML, CSS, R, Racket, Verilog</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="mb-3 font-semibold">Frameworks & Libraries</h3>
+          <p class="text-sm text-slate-600">React.js, Django, Tailwind CSS, Node.js, FastAPI, Pandas, NumPy</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="mb-3 font-semibold">Databases</h3>
+          <p class="text-sm text-slate-600">MongoDB, SQL</p>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="mb-3 font-semibold">Developer Tools</h3>
+          <p class="text-sm text-slate-600">Git, VS Code, Visual Studio, PyCharm</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal mb-14 scroll-mt-24">
+      <h2 class="section-title">Experience</h2>
+      <div class="space-y-4">
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-semibold">Software Lead | VEX VRC Robotics Team | Enjoy AI</h3>
+          <p class="mt-1 text-sm text-slate-500">2022 - 2025</p>
+          <!--
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-600">
+            <li>Write one quantified impact statement.</li>
+            <li>Write one technical ownership statement.</li>
+            <li>Write one collaboration/communication statement.</li>
+          </ul>
+          -->
+        </article>
+        <!--
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-semibold">Role Title | Organization</h3>
+          <p class="mt-1 text-sm text-slate-500">Location | Date Range</p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-600">
+            <li>Write one quantified impact statement.</li>
+            <li>Write one technical ownership statement.</li>
+            <li>Write one collaboration/communication statement.</li>
+          </ul>
+        </article>
+        <article class="rounded-3xl bg-white p-6 shadow-soft">
+          <h3 class="text-lg font-semibold">Role Title | Organization</h3>
+          <p class="mt-1 text-sm text-slate-500">Location | Date Range</p>
+          <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-600">
+            <li>Write one quantified impact statement.</li>
+            <li>Write one technical ownership statement.</li>
+            <li>Write one collaboration/communication statement.</li>
+          </ul>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <section id="projects" class="reveal mb-14 scroll-mt-24">
+      <div class="mb-5 flex flex-wrap items-center justify-between gap-4">
+        <h2 class="section-title mb-0">Projects</h2>
+        <div id="project-filters" class="flex flex-wrap gap-2">
+          <button class="filter-btn active-filter" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="project-card rounded-3xl bg-white p-4 shadow-soft" data-category="backend">
+          <!-- TODO: Upload image to assets/project/walle-walle.jpg -->
+          <img src="./assets/project/walle-walle.jpg" alt="Walle Walle project screenshot" class="mb-4 h-44 w-full rounded-2xl object-cover" />
+          <h3 class="text-lg font-semibold">Walle Walle</h3>
+          <!-- TODO: Replace project summary -->
+          <p class="mt-2 text-sm text-slate-600">Add one concise sentence describing the problem and solution.</p>
+          <!-- TODO: Replace project tech stack -->
+          <p class="mt-2 text-xs tracking-wide text-slate-500">Python, C, OpenCV, Gemini API, ElevenLabs, YOLO</p>
+          <div class="mt-4 flex gap-3 text-sm font-semibold">
+            <!-- TODO: Replace links -->
+            <a href="https://github.com/Interalab/Robotics" target="_blank" rel="noreferrer" class="underline">GitHub</a>
+            <a href="https://devpost.com/software/111-k1z6bm" target="_blank" rel="noreferrer" class="underline">Devpost</a>
+          </div>
+        </article>
+
+        <article class="project-card rounded-3xl bg-white p-4 shadow-soft" data-category="data fullstack frontend backend">
+          <!-- TODO: Upload image to assets/project/girlmath.jpg -->
+          <img src="./assets/project/girlmath.jpg" alt="GirlMath project screenshot" class="mb-4 h-44 w-full rounded-2xl object-cover" />
+          <h3 class="text-lg font-semibold">GirlMath</h3>
+          <!-- TODO: Replace project summary -->
+          <p class="mt-2 text-sm text-slate-600">Add one concise sentence describing the problem and solution.</p>
+          <!-- TODO: Replace project tech stack -->
+          <p class="mt-2 text-xs tracking-wide text-slate-500">TypeScript, JavaScript, CSS, MongoDB, React, Gemini API </p>
+          <div class="mt-4 flex gap-3 text-sm font-semibold">
+            <!-- TODO: Replace links -->
+            <a href="https://github.com/nhasan6/itstechnova2025" target="_blank" rel="noreferrer" class="underline">GitHub</a>
+            <a href="https://devpost.com/software/girl-math" target="_blank" rel="noreferrer" class="underline">Devpost</a>
+          </div>
+        </article>
+
+        <!--
+        <article class="project-card rounded-3xl bg-white p-4 shadow-soft" data-category="fullstack frontend">
+          <img src="./assets/project/celebration.jpg" alt="Celebration project screenshot" class="mb-4 h-44 w-full rounded-2xl object-cover" />
+          <h3 class="text-lg font-semibold">Celebration</h3>
+          <p class="mt-2 text-sm text-slate-600">Add one concise sentence describing the problem and solution.</p>
+          <p class="mt-2 text-xs uppercase tracking-wide text-slate-500">Tech: React, Node.js, MongoDB</p>
+          <div class="mt-4 flex gap-3 text-sm font-semibold">
+            <a href="#" target="_blank" rel="noreferrer" class="underline">GitHub</a>
+            <a href="#" target="_blank" rel="noreferrer" class="underline">Devpost</a>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <section id="awards" class="reveal scroll-mt-24">
+      <h2 class="section-title">Awards</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-3xl bg-white p-5 shadow-soft">
+          <h3 class="font-semibold">Canadian Senior Mathematics Contests Honor Roll & School Champion</h3>
+          <p class="mt-1 text-sm text-slate-500">University of Waterloo | 2025</p>
+          <p class="mt-2 text-sm text-slate-600">Achieved Top 1% among all official contestants in Canada and internationally</p>
+        </article>
+        <article class="rounded-3xl bg-white p-5 shadow-soft">
+          <h3 class="font-semibold">Enjoy AI 3D Virtual Robotics Competition National Runner-Up & Provincial Champion </h3>
+          <p class="mt-1 text-sm text-slate-500">Enjoy AI | 2023</p>
+          <p class="mt-2 text-sm text-slate-600">Implemented a highly optimized PID control algorithm</p>
+        </article>
+        <!--
+        <article class="rounded-3xl bg-white p-5 shadow-soft">
+          <h3 class="font-semibold">Award Title</h3>
+          <p class="mt-1 text-sm text-slate-500">Issuer | 202X</p>
+          <p class="mt-2 text-sm text-slate-600">Short award context and selection criteria.</p>
+        </article>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200/70 bg-white/70">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+      <p>&copy; <span id="year"></span> May Cao. Chase the wind and touch the sky.</p>
+      <p class="flex items-center gap-3">
+      <a href="https://github.com/mayyuchencao" target="_blank" rel="noreferrer" class="hover:underline">GitHub</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/mayyuchencao" target="_blank" rel="noreferrer" class="hover:underline">LinkedIn</a>
+      <span>|</span>
+      <a href="mailto:may.cao@uwaterloo.ca" class="hover:underline">Email</a>
+    </p>
+
+    </div>
+  </footer>
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
