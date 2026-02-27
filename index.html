@@ -32,21 +32,23 @@
 </head>
 <body class="bg-cream text-ink selection:bg-mint">
   <header class="sticky top-0 z-50 backdrop-blur border-b border-white/70 bg-cream/85">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-      <a href="#home" class="text-lg font-semibold tracking-wide">May Cao</a>
-      <ul class="hidden items-center gap-6 text-sm font-medium md:flex">
+    <nav class="mx-auto max-w-6xl px-4 py-3 md:px-6 md:py-4">
+      <div class="mb-2 flex items-center justify-between md:mb-0">
+        <a href="#home" class="text-lg font-semibold tracking-wide">May Cao</a>
+        <a href="#projects" class="rounded-full bg-white px-3 py-1.5 text-xs font-semibold shadow-soft md:px-4 md:py-2 md:text-sm">View Work</a>
+      </div>
+      <ul class="flex items-center gap-4 overflow-x-auto whitespace-nowrap pb-1 text-xs font-medium md:gap-6 md:pb-0 md:text-sm">
         <li><a class="nav-link" href="#education">Education</a></li>
         <li><a class="nav-link" href="#skills">Skills</a></li>
         <li><a class="nav-link" href="#experience">Experience</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#awards">Awards</a></li>
       </ul>
-      <a href="#projects" class="rounded-full bg-white px-4 py-2 text-sm font-semibold shadow-soft">View Work</a>
     </nav>
   </header>
 
-  <main id="home" class="mx-auto max-w-6xl px-6 pb-20 pt-10 md:pt-14">
-    <section class="reveal mb-16 grid items-center gap-8 rounded-3xl bg-white p-8 shadow-soft md:mb-24 md:grid-cols-[1fr_auto]">
+  <main id="home" class="mx-auto max-w-6xl px-4 pb-20 pt-8 md:px-6 md:pt-14">
+    <section class="reveal mb-16 grid items-center gap-6 rounded-3xl bg-white p-6 shadow-soft md:mb-24 md:gap-8 md:p-8 md:grid-cols-[1fr_auto]">
       <div>
         <p class="mb-4 inline-block rounded-full bg-mint px-4 py-1 text-xs font-semibold uppercase tracking-wider">
           Open to Opportunities
@@ -55,7 +57,7 @@
           Hi! I'm May Cao ^^
         </h1>
 
-        <p class="max-w-2xl text-sm font-medium uppercase tracking-wide text-slate-500">
+        <p class="max-w-2xl text-xs font-medium tracking-wide text-slate-500 md:text-sm">
           Software Engineer | Curious Builder | Fast Learner | Seeking Internships
         </p>
         <p class="mb-8 mt-2 max-w-xl text-slate-600">
@@ -111,8 +113,8 @@
     <section id="education" class="reveal mb-14 scroll-mt-24">
       <h2 class="section-title">Education</h2>
       <div class="rounded-3xl bg-white p-6 shadow-soft md:p-8">
-        <div class="flex items-stretch gap-4 md:gap-6">
-          <div class="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-cream p-0.5 md:h-24 md:w-24 md:p-1">
+        <div class="flex flex-col items-start gap-4 md:flex-row md:items-stretch md:gap-6">
+          <div class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-cream p-0.5 md:h-24 md:w-24 md:p-1">
             <!-- TODO: Upload Waterloo logo to assets/icons/waterloo-logo.png -->
             <img
               src="./assets/icons/waterloo-logo.png"
@@ -193,12 +195,12 @@
     <section id="projects" class="reveal mb-14 scroll-mt-24">
       <div class="mb-5 flex flex-wrap items-center justify-between gap-4">
         <h2 class="section-title mb-0">Projects</h2>
-        <div id="project-filters" class="flex flex-wrap gap-2">
-          <button class="filter-btn active-filter" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="backend">Backend</button>
-          <button class="filter-btn" data-filter="data">Data</button>
+        <div id="project-filters" class="flex w-full flex-nowrap gap-2 overflow-x-auto pb-1 md:w-auto md:flex-wrap md:overflow-visible md:pb-0">
+          <button class="filter-btn shrink-0 active-filter" data-filter="all">All</button>
+          <button class="filter-btn shrink-0" data-filter="fullstack">Fullstack</button>
+          <button class="filter-btn shrink-0" data-filter="frontend">Frontend</button>
+          <button class="filter-btn shrink-0" data-filter="backend">Backend</button>
+          <button class="filter-btn shrink-0" data-filter="data">Data</button>
         </div>
       </div>
       <div class="grid gap-5 md:grid-cols-3">
@@ -274,7 +276,7 @@
   <footer class="border-t border-slate-200/70 bg-white/70">
     <div class="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
       <p>&copy; <span id="year"></span> May Cao. Chase the wind and touch the sky.</p>
-      <p class="flex items-center gap-3">
+      <p class="flex flex-wrap items-center gap-2 md:gap-3">
       <a href="https://github.com/mayyuchencao" target="_blank" rel="noreferrer" class="hover:underline">GitHub</a>
       <span>|</span>
       <a href="https://www.linkedin.com/in/mayyuchencao" target="_blank" rel="noreferrer" class="hover:underline">LinkedIn</a>
